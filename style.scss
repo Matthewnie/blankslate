@@ -1,0 +1,72 @@
+/*
+Theme Name: Apostle Islands
+Author: Lake Effect
+Author URI: http://ledigital.com/
+Version: 1.0.9
+
+*/
+
+@import './sass/variables/fonts';
+@import './sass/variables/colors';
+@import './sass/normalize';
+@import './sass/variables/mixins';
+$mq-breakpoints: (
+    mobile:  320px,
+    tablet:  740px,
+    desktop: 980px,
+    wide:    1300px,
+
+    // Tweakpoints
+    desktopAd: 810px,
+    mobileLandscape: 480px
+);
+// $mq-show-breakpoints: (mobile, mobileLandscape, tablet, desktop, wide);
+@import './sass/variables/mq';
+@import './sass/variables/typography';
+
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 16px;
+	-webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: $text;
+}
+
+
+#wrapper {
+  position: relative;
+  max-width: 2500px;
+  margin: 0 auto;
+}
+
+@import './sass/partials/accessibility';
+
+
+
+
+.wrapper {
+	position: relative;
+}
+
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@import './sass/partials/header';
+@import './sass/partials/footer';
+
+@import './sass/pages/home';
+@import './sass/pages/general';
+
+
+@import './sass/partials/wordpress';
+@import './sass/partials/print';

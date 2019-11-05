@@ -1,0 +1,73 @@
+html {
+  font-family: $serif;
+  color: $text;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $sans;
+  margin: 1rem 0;
+}
+
+h1 {
+  @include font-size(40);
+}
+
+h2 {
+  @include font-size(42);
+}
+
+h3 {
+  @include font-size(29);
+}
+
+h4 {
+  @include font-size(24);
+}
+
+h5 {
+  @include font-size(22);
+}
+
+h6 {
+  @include font-size(20);
+}
+
+p {
+
+}
+
+ul {
+
+}
+
+a {
+
+}
+
+.button {
+
+  &:hover,
+  &:focus {
+
+  }
+}
+
+/*------------------------------------*\
+    MISC
+\*------------------------------------*/
+
+::selection {
+	background:#04A4CC;
+	color:#FFF;
+	text-shadow:none;
+}
+::-webkit-selection {
+	background:#04A4CC;
+	color:#FFF;
+	text-shadow:none;
+}
+::-moz-selection {
+	background:#04A4CC;
+	color:#FFF;
+	text-shadow:none;
+}
